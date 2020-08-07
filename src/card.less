@@ -1,3 +1,5 @@
+@card-height: 300px;
+@card-border: 20px;
 .cards-list {
 	z-index: 0;
 	width: 90%;
@@ -8,21 +10,21 @@
     .card {
         margin: 30px auto;
         width: 20%;
-        height: 300px;
+        height: @card-height;
         border-radius: 20px;
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
         /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
-        cursor: pointer;
         transition: 0.3s;
         
         .card_image {
             width: 100%;
-            border-radius: 20px;
+            border-radius: @card-border;
             img {
                 width: 100%;
-                height: inherit;
-                border-radius: 20px;
+                height: @card-height;
+                border-radius: @card-border;
                 object-fit: cover;
+                cursor: pointer;
             }
         }
     
@@ -41,10 +43,9 @@
         }
 
         .principal {
-            width: 300px;
-            height: 300px;
+            width: 300px !important;
+            height: @card-height;
             cursor: none;
-            
         }
         
     
