@@ -1,5 +1,6 @@
 @card-height: 300px;
 @card-border: 20px;
+@width: 100%;
 .cards-list {
 	z-index: 0;
 	width: 90%;
@@ -9,18 +10,18 @@
     
     .card {
         margin: 30px auto;
-        width: 20%;
+        width: 22%;
         height: @card-height;
-        border-radius: 20px;
+        border-radius: @card-border;
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
         /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
         transition: 0.3s;
         
         .card_image {
-            width: 100%;
+            width: @width;
             border-radius: @card-border;
             img {
-                width: 100%;
+                width: @width;
                 height: @card-height;
                 border-radius: @card-border;
                 object-fit: cover;
